@@ -1,0 +1,19 @@
+Sistema de indicação para escolas particulares em tempo integral no município de Salvador 
+O que preciso criar:
+	⁃	uma classe para cadastro com nome completo, idade, e-mail 
+	⁃	Quem tem cadastro pode consultar e avaliar uma creche/escola
+          - consultaPorBairro(bairro)
+          - consultaPorNota(nota)
+          - avaliarUmaCrecheEscola(nomeCreche, bairro, descrição, nota)
+         
+	⁃	testes primeiro 
+	⁃
+O que preciso criar:
+	⁃	uma classe para cadastro com nome completo, idade, e-mail 
+	⁃	Quem tem cadastro pode consultar e avaliar uma creche/escola
+          - consultaPorBairro(bairro)
+          - consultaPorNota(nota)
+          - avaliarUmaCrecheEscola(nomeCreche, bairro, descrição, nota)
+         
+	⁃	testes primeiro 
+	⁃
