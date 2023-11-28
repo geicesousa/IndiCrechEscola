@@ -1,0 +1,33 @@
+{
+  "name": "projeto-final---indicrechescola",
+  "version": "1.0.0",
+  "description": "Projeto de Conclusão de Curso da Imersão Javascript Reprograma. A IndiCrechEscola é uma aplicação pensada para mães e pais que estão buscando uma creche/escola privada e tempo integral para crianças residentes em Salvador - BA.",
+  "main": "Usuaria.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geice-Sousa/IndiCrechEscola.git"
+  },
+  "keywords": [
+    "creche",
+    "escola",
+    "tempo",
+    "integral",
+    "salvador",
+    "escola",
+    "particular",
+    "creche",
+    "particular"
+  ],
+  "author": "Geice Sousa Pinho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Geice-Sousa/IndiCrechEscola/issues"
+  },
+  "homepage": "https://github.com/Geice-Sousa/IndiCrechEscola#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}

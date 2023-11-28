@@ -18,3 +18,16 @@ Deixam as crianças com vizinhas, com a avó, com uma tia, irmã, aos cuidados d
 
 **implementações futuras**
 - associar a um frontend
+
+
+## Utilização local da aplicação 
+- npm install para baixar as dependências necessárias
+
+<!-- ### Instruções
+Antes de começar, vamos organizar nosso setup.
+* Fork esse repositório 
+* Clone o fork na sua máquina (Para isso basta abrir o seu terminal e digitar `git clone url-do-seu-repositorio-forkado`)
+* Entre na pasta do seu repositório (Para isso basta abrir o seu terminal e digitar `cd nome-do-seu-repositorio-forkado`)
+* Crie uma branch com seu nome e não suba nada na main (para isso é só digitar no seu terminal `git checkout -b nome-da-sua-branch
+`)
+* Para tirar duvidas sobre como configurar o Remote, é só clicar [aqui](/material/configRemote.md) -->
