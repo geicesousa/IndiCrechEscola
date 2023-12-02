@@ -25,3 +25,9 @@ O que preciso criar:
 	é a creche que recebe a nota e o bairro?
 	se a creche da avaiação tiver que ser instancia de crecheEscola não tem como criar/cadastrar uma nova creche 
 	deve ter um metodo criar/cadastrar creche?
+
+	------------------
+uma classe para maes/responsaveis 
+classe creche metodo cadastrar creche metodo static par gurdar as escolas e avaliacoes
+
+criar get e set para todas as class
