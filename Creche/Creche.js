@@ -1,13 +1,17 @@
-const Avaliacao = require('./Avaliacao/Avaliacao')
-const Cadastro = require('./Cadastro/Cadastro')
+const Avaliacao = require('../Avaliacao/Avaliacao')
+const Cadastro = require('../Cadastro/Cadastro')
 
 class Creche extends Cadastro{
+  nome;
+  email;
+  bairro;
+  telefone;
+  avaliacao;
   
   static todasAsCreches = []
 
-  cadastrarNovaCreche(nome, bairro, email, telefone){
-    this.nome = nome,
-    this.email = email,
+  constructor(nome, bairro, email, telefone){
+    super(nome, email)
     this.bairro = bairro,
     this.telefone = telefone,
     this.avaliacao = new Avaliacao()
