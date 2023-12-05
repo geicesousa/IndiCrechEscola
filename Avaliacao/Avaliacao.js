@@ -18,6 +18,8 @@ class Avaliacao{
       Avaliacao.listaAvaliacoes.push(this)
 
       Creche.todasAsCreches.crecheExistente.avaliacao(this) // acho que é assim
+
+      return `${nomeMae.nome}, sua avaliação à/ao ${creche} foi realizada com sucesso. Obrigada!`
     }
     else{
       return `Para criar uma avaliação tanto a mãe e quanto a creche/escola devem estar cadastradas no sistema.`

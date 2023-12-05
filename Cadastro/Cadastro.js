@@ -14,6 +14,22 @@ class Cadastro {
       return `O email informado não está no formato correto.`
     }
   }
+
+  // get nome(){
+  //   return this.nome;
+  // }
+
+  // set nome(novoNome){
+  //   return this.nome = novoNome;
+  // }
+
+  // get email(){
+  //   return this.email
+  // }
+
+  // set email(novoEmail){
+  //   return this.email = novoEmail
+  // }
 }
 
 module.exports = Cadastro 

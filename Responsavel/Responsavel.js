@@ -1,7 +1,6 @@
 const Avaliacao = require('../Avaliacao/Avaliacao');
 const Cadastro = require('../Cadastro/Cadastro');
 const Creche = require('../Creche/Creche');
-
 class Responsavel extends Cadastro {
   constructor(nome, email, idade) {
     super(nome, email),
@@ -16,7 +15,6 @@ class Responsavel extends Cadastro {
       console.log(avaliacao.legth)
       return `Sua avaliação precisa ter pelo menos 160 caracteres, isso é o equivale entre 22-25 palavras.`
     }
-
     if (crecheExistente){
       const avalia = new Avaliacao(nomeCreche, this.nome, avaliacao, nota)
     
@@ -28,13 +26,7 @@ class Responsavel extends Cadastro {
     }
   }
 
-  // GETTERS E SETTERS FAZEM ACONTECER UM ERRO // get nome(){
-  //   return this.nome;
-  // }
-
-  // set nome(novoNome){
-  //   return this.nome = novoNome;
-  // }
+  // GETTERS E SETTERS FAZEM ACONTECER UM ERRO 
 
   // get idade(){
   //   return this.idade
@@ -44,13 +36,6 @@ class Responsavel extends Cadastro {
   //   return this.idade = novaIdade
   // }
 
-  // get email(){
-  //   return this.email
-  // }
-
-//   set email(novoEmail){
-//     return this.email = novoEmail
-//   }
 }
 
 module.exports = Responsavel

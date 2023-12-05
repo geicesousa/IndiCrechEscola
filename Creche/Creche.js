@@ -14,7 +14,7 @@ class Creche extends Cadastro{
     super(nome, email)
     this.bairro = bairro,
     this.telefone = telefone,
-    this.avaliacao = new Avaliacao()
+    // this.avaliacao = new Avaliacao()
 
     Creche.todasAsCreches.push(this)
     
@@ -41,28 +41,12 @@ class Creche extends Cadastro{
     }
   }
 
-  get nome(){
-    return this.nome;
-  }
-
-  set nome(novoNome){
-    return this.nome = novoNome;
-  }
-
   get bairro(){
     return this.bairro;
   }
 
   set bairro(novoBairro){
     return this.bairro = novoBairro;
-  }
-
-  get email(){
-    return this.email;
-  }
-
-  set email(novoEmail){
-    return this.email = novoEmail;
   }
 
   get telefone(){
