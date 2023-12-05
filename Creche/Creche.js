@@ -11,7 +11,7 @@ class Creche extends Cadastro{
   static todasAsCreches = []
 
   constructor(nome, bairro, email, telefone){
-    super(nome, email)
+    super(nome, email),
     this.bairro = bairro,
     this.telefone = telefone,
     // this.avaliacao = new Avaliacao()

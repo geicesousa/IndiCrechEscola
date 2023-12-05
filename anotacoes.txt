@@ -31,3 +31,5 @@ uma classe para maes/responsaveis
 classe creche metodo cadastrar creche metodo static par gurdar as escolas e avaliacoes
 
 criar get e set para todas as class
+
+classe avaliação 

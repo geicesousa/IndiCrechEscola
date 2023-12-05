@@ -1,11 +1,12 @@
 const Creche = require('./Creche');
 
 describe('CLASS Creche', () => {
-  const novaCreche = new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
+  const creche1 = new Creche()
+  const novaCreche = creche1.criarCreche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
 
   describe('INSTANCIAÇÃO', () => {
     test('deveria instanciar de uma creche com sucesso', () => {
-      const novaCreche = new Creche('Pingo de Gente', 'Boca do Rio', "pingodegente@email.com", "71912345678");
+      const novaCreche = creche1.criarCreche('Pingo de Gente', 'Boca do Rio', "pingodegente@email.com", "71912345678");
 
       expect(novaCreche).toBe("Pingo de Gente cadastrada com sucesso. Os dados cadastrados foram: Pingo de Gente, Boca do Rio, pingodegente@email.com, 71912345678");
     });

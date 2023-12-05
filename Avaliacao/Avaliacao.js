@@ -5,7 +5,7 @@ class Avaliacao{
 
   static listaAvaliacoes = []
 
-  constructor(creche, nomeMae, textoAvaliativo, nota){
+  avaliando(creche, nomeMae, textoAvaliativo, nota){
     const crecheExistente = Creche.todasAsCreches.find((cadaCreche)=> cadaCreche.nome === nomeCreche);
 
     if(crecheExistente && nomeMae instanceof Responsavel){
