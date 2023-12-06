@@ -46,7 +46,7 @@ class Creche extends Cadastro{
   }
 
   set bairro(novoBairro){
-    return this.bairro = novoBairro;
+    this.bairro = novoBairro;
   }
 
   get telefone(){
@@ -54,7 +54,7 @@ class Creche extends Cadastro{
   }
 
   set telefone(novoTelefone){
-    return this.telefone = novoTelefone;
+    this.telefone = novoTelefone;
   }
 }
 

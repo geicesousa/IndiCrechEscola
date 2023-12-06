@@ -1,12 +1,11 @@
 const Creche = require('./Creche');
 
 describe('CLASS Creche', () => {
-  const creche1 = new Creche()
-  const novaCreche = creche1.criarCreche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
+  const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
 
   describe('INSTANCIAÇÃO', () => {
     test('deveria instanciar de uma creche com sucesso', () => {
-      const novaCreche = creche1.criarCreche('Pingo de Gente', 'Boca do Rio', "pingodegente@email.com", "71912345678");
+      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', "pingodegente@email.com", "71912345678");
 
       expect(novaCreche).toBe("Pingo de Gente cadastrada com sucesso. Os dados cadastrados foram: Pingo de Gente, Boca do Rio, pingodegente@email.com, 71912345678");
     });
@@ -15,10 +14,9 @@ describe('CLASS Creche', () => {
   describe('MÉTODO consultarPorBairro', ()=>{
 
     test('deveria retornar uma lista de creches de acordo com o bairro', ()=>{
-      const procuraPorBairro = novaCreche.consultarPorBairro('Boca do Rio');
+      const procuraPorBairro = Creche.consultarPorBairro('Boca do Rio');
 
-      expect(procuraPorBairro).toBe(`Foram encontradas essas instituições no bairro Boca do Rio: [{ nome: "Pingo de Gente", bairro: "Boca do Rio", 
-      email: "pingodegente@email.com", contato: "71912345678"]}`)
+      expect(procuraPorBairro).toBe(`Foram encontradas essas instituições no bairro Boca do Rio: [{ nome: "Pingo de Gente", bairro: "Boca do Rio", email: "pingodegente@email.com", contato: "71912345678"]}`)
     });
 
     test('deveria retornar uma mensagem informando que não encontrou o bairro', ()=>{

@@ -2,6 +2,8 @@ const Avaliacao = require('../Avaliacao/Avaliacao');
 const Cadastro = require('../Cadastro/Cadastro');
 const Creche = require('../Creche/Creche');
 class Responsavel extends Cadastro {
+  idade;
+
   constructor(nome, email, idade) {
     super(nome, email),
     this.idade = idade
@@ -26,15 +28,13 @@ class Responsavel extends Cadastro {
     }
   }
 
-  // GETTERS E SETTERS FAZEM ACONTECER UM ERRO 
+  getidade(){
+    return this.idade
+  }
 
-  // get idade(){
-  //   return this.idade
-  // }
-
-  // set idade(novaIdade){
-  //   return this.idade = novaIdade
-  // }
+  setidade(novaIdade){
+    this.idade = novaIdade
+  }
 
 }
 

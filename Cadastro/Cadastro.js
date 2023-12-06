@@ -15,21 +15,6 @@ class Cadastro {
     }
   }
 
-  // get nome(){
-  //   return this.nome;
-  // }
-
-  // set nome(novoNome){
-  //   return this.nome = novoNome;
-  // }
-
-  // get email(){
-  //   return this.email
-  // }
-
-  // set email(novoEmail){
-  //   return this.email = novoEmail
-  // }
 }
 
 module.exports = Cadastro 

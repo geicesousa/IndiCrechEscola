@@ -1,19 +1,20 @@
 const Responsavel = require('./Responsavel');
 const Creche = require('../Creche/Creche');
-const creche1 = new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71987456321');
-const creche2 = new Creche('Cheche Escola Viver', 'Imbui', 'crecheviver@email.com', '71874589632');
-const creche3 = new Creche('Turma da Monica', 'Castelo Branco', 'turma@email.com', '71323514632');
-const creche4 = new Creche('Creche Dona Francisca', 'Boca do Rio', 'dona@email.com', '71323514632');
-console.log(creche1, creche2, creche3);
+
+// const creche1 = new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71987456321');
+// const creche2 = new Creche('Cheche Escola Viver', 'Imbui', 'crecheviver@email.com', '71874589632');
+// const creche3 = new Creche('Turma da Monica', 'Castelo Branco', 'turma@email.com', '71323514632');
+// const creche4 = new Creche('Creche Dona Francisca', 'Boca do Rio', 'dona@email.com', '71323514632');
+// console.log(creche1, creche2, creche3);
  // criei para funcionar como mock
 
 describe('CLASS Responsavel', () => {
   const Pamela = new Responsavel('Pamela Correia', 'pamela@email.com', 28);
   describe('INSTANCIAÇÃO', () => {
     test('deveria instanciar uma usuária com sucesso', () => {
-      // expect(Pamela.idade).toBe(28);
-      // expect(Pamela.nome).toBe('Pamela Correia');
-      // expect(Pamela.email).toBe('pamela@email.com');
+      expect(Pamela.getidade()).toBe(28);
+      // expect(Pamela.getnome()).toBe('Pamela Correia');
+      // expect(Pamela.getemail()).toBe('pamela@email.com');
       expect(Pamela instanceof Responsavel).toBeTruthy();
     });
   });
