@@ -1,10 +1,11 @@
 const Creche = require('./Creche');
 
 describe('CLASS Creche', () => {
-
+  const creche1 = new Creche()
   describe('INSTANCIAÇÃO', () => {
+    const novaCreche =  creche1.criarCreche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
+
     test('deveria instanciar de uma creche com sucesso', () => {
-      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', "pingodegente@email.com", "71912345678");
 
       expect(novaCreche).toBe("Pingo de Gente cadastrada com sucesso. Os dados cadastrados foram: Pingo de Gente, Boca do Rio, pingodegente@email.com, 71912345678");
     });
@@ -13,7 +14,6 @@ describe('CLASS Creche', () => {
   describe('MÉTODO consultarPorBairro', ()=>{
 
     test('deveria retornar uma lista de creches de acordo com o bairro', ()=>{
-      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
 
       const procuraPorBairro = novaCreche.consultarPorBairro('Boca do Rio');
 
@@ -21,9 +21,8 @@ describe('CLASS Creche', () => {
     });
 
     test('deveria retornar uma mensagem informando que não encontrou o bairro', ()=>{
-      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
 
-      const procuraPorBairro = novaCreche.consultaPorBairro('Boca ');
+      const procuraPorBairro = novaCreche.consultaPorBairro('Boca');
 
       expect(procuraPorBairro).toBe(`Não há nenhuma instituição cadastrada no sistema com o bairro Boca do Rio.`)
     });
@@ -32,7 +31,6 @@ describe('CLASS Creche', () => {
   describe('MÉTODO consultarPorNota', ()=>{
 
     test('deveria retornar uma lista de creches de acordo com a nota', ()=>{
-      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
       
       const buscarNota = novaCreche.consultarPorNota(8);
 
@@ -40,7 +38,6 @@ describe('CLASS Creche', () => {
 
     });
     test('deveria retornar um aviso de nota inexistente', ()=>{ 
-      const novaCreche =  new Creche('Pingo de Gente', 'Boca do Rio', 'pingodegente@email.com', '71912345678');
 
       const buscarNota = novaCreche.consultarPorNota(8);
 

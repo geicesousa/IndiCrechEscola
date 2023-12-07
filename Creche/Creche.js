@@ -2,12 +2,7 @@ const Avaliacao = require('../Avaliacao/Avaliacao')
 const Cadastro = require('../Cadastro/Cadastro')
 
 class Creche extends Cadastro{
-  nome;
-  email;
-  bairro;
-  telefone;
-  avaliacao;
-  
+
   static todasAsCreches = []
 
   constructor(nome, bairro, email, telefone){
@@ -41,21 +36,19 @@ class Creche extends Cadastro{
     }
   }
 
-  
-
-  get bairro(){
+  getbairro(){
     return this.bairro;
   }
 
-  set bairro(novoBairro){
+  setbairro(novoBairro){
     this.bairro = novoBairro;
   }
 
-  get telefone(){
+  gettelefone(){
     return this.telefone;
   }
 
-  set telefone(novoTelefone){
+  settelefone(novoTelefone){
     this.telefone = novoTelefone;
   }
 }

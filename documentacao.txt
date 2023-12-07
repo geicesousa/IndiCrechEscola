@@ -1,0 +1,37 @@
+DOCUMENTAÇÃO DO PROJETO: "Sistema de indicação para escolas particulares em tempo integral no município de Salvador"
+
+ 1) Classe Cadastro
+	- recebe nome e email
+	- classe mãe
+	- retorna uma mensagem de erro caso o nome esteja vazio
+	- retorna uma mensagem de erro caso o email esteja no formato errado
+	- quando o é possível reaizar o cadastro, retorna uma mensagem de sucesso
+	- não possui métodos
+ 
+ 2) Classe Responsavel
+    - é herdeira da classe Cadastro;
+	- recebe como parametro para instanciação nome, email e idade;
+	- possui apenas o método avaliarCreche():
+	  - avaliarCreche recebe como parametros o nome da creche, avaliação e nota
+	  - procura na lista de creches cadastradas se há alguma creche com o nome igual ao passado no parametro
+	  - verifica se a avaliação possui a quantidade de caracteres minima requerida 
+	  - caso a creche não esteja na lista, retorna uma mensagem de exceção
+	  - caso haja a creche na lista, cria uma nova Avaliacao(), a insere na lista de avaliações da creche encontrada e retornauma mensagem informmando que houve sucesso.
+	
+	- possui get para email, senha e nome;
+
+ 3) Classe Creche
+	- é herdeira da classe Cadastro
+    - recebe como parametros nome, bairro, email, telefone
+	- possui os atributos nome, bairro, email, telefone, avaliacao, todasAsCreches
+	  - avaliacao é uma classe instanciada
+	  - todasAsCreches é um static inicializado com um array vazio
+	- possui os metodos:
+	      - consultaPorBairro(bairro) que verifica no static todasAsCreches se há alguma creche na lista com o atributo bairro igual ao passado no parametro, se hover, retorna todas encontradas, caso não haja, retorna uma mensagem;
+          - consultaPorNota(nota) que verifica no static todasAsCreches se há alguma creche na lista com o atributo nota igual ao passado no parametro, se hover, retorna todas encontradas, caso não haja, retorna uma mensagem informmando que não há creche com aquela nota;
+	- possui getters e setters para bairro e telefone
+
+ 4) Classe Avaliacao
+	- recebe nome da creche, nome da responsável, texto avaliativo e nota
+	- possui métodos getters para creche, responsavel, textoAvaliativo e nota
+         
