@@ -13,27 +13,31 @@ class Responsavel extends Cadastro {
     const crecheExistente = Creche.todasAsCreches.find((cadaCreche)=> cadaCreche.nome === nomeCreche);
     const caracteresMinimos = 150;
 
-    if(avaliacao.legth < caracteresMinimos){
-      console.log(avaliacao.legth)
+    if(avaliacao.length < caracteresMinimos){
       return `Sua avaliação precisa ter pelo menos 160 caracteres, isso é o equivale entre 22-25 palavras.`
     }
-    if (crecheExistente){
-      const avalia = new Avaliacao(nomeCreche, this.nome, avaliacao, nota)
+   
+    if(!crecheExistente){
+      return `Não encontramos "${nomeCreche}" no nosso cadastro. Para criar uma avaliação a creche/escola deve estar cadastrada no sistema.`
+    } 
     
-      crecheExistente.avaliacao.push(avalia)
-      
-      return `${this.nome}, sua avaliação à/ao ${nomeCreche} foi realizada com sucesso. Obrigada!`
-    } else{
-      return `Não encontramos ${nomeCreche} no nosso cadastro.`
-    }
+    const avalia = new Avaliacao(nomeCreche, this.nome, avaliacao, nota)
+    
+    crecheExistente.avaliacao.push(avalia) // Creche.todasAsCreches.crecheExistente.avaliacao(avalia)
+    
+    return `${this.nome}, sua avaliação à/ao ${nomeCreche} foi realizada com sucesso. Obrigada!`
   }
 
   getidade(){
     return this.idade
   }
 
-  setidade(novaIdade){
-    this.idade = novaIdade
+  getemail(){
+    return this.email
+  }
+
+  getnome(){
+    return this.nome
   }
 
 }

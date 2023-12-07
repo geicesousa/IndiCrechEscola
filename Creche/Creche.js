@@ -14,7 +14,7 @@ class Creche extends Cadastro{
     super(nome, email),
     this.bairro = bairro,
     this.telefone = telefone,
-    // this.avaliacao = new Avaliacao()
+    this.avaliacao = new Avaliacao()
 
     Creche.todasAsCreches.push(this)
     
@@ -40,6 +40,8 @@ class Creche extends Cadastro{
       return `Nenhuma instituição cadastrada no sistema foi avaliada com a nota ${notaProcurada}.`
     }
   }
+
+  
 
   get bairro(){
     return this.bairro;

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1701915202896" clover="3.2.0">
+  <project timestamp="1701915202896" name="All files">
+    <metrics statements="53" coveredstatements="36" conditionals="12" coveredconditionals="7" methods="21" coveredmethods="11" elements="86" coveredelements="54" complexity="0" loc="53" ncloc="53" packages="4" files="4" classes="4"/>
+    <package name="Avaliacao">
+      <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="Avaliacao.js" path="C:\Users\geice\Desktop\{reprograma}\Projeto Final - IndiCrechEscola\Avaliacao\Avaliacao.js">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="6" type="stmt"/>
+        <line num="6" count="6" type="stmt"/>
+        <line num="7" count="6" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="28" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="Cadastro">
+      <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="Cadastro.js" path="C:\Users\geice\Desktop\{reprograma}\Projeto Final - IndiCrechEscola\Cadastro\Cadastro.js">
+        <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="Creche">
+      <metrics statements="19" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="1"/>
+      <file name="Creche.js" path="C:\Users\geice\Desktop\{reprograma}\Projeto Final - IndiCrechEscola\Creche\Creche.js">
+        <metrics statements="19" coveredstatements="7" conditionals="4" coveredconditionals="0" methods="9" coveredmethods="1"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="2" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="55" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="Responsavel">
+      <metrics statements="17" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="4"/>
+      <file name="Responsavel.js" path="C:\Users\geice\Desktop\{reprograma}\Projeto Final - IndiCrechEscola\Responsavel\Responsavel.js">
+        <metrics statements="17" coveredstatements="12" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="4"/>
+        <line num="1" count="2" type="stmt"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="13" count="12" type="stmt"/>
+        <line num="14" count="3" type="stmt"/>
+        <line num="16" count="3" type="cond" truecount="2" falsecount="0"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="36" count="0" type="stmt"/>
+        <line num="40" count="0" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
